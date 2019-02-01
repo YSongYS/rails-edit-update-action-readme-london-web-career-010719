@@ -1,0 +1,10 @@
+<%= form_tag article_path(@article), method:'patch' do %>
+  <h2>My edit</h2>
+  <label>Article title:</label><br>
+  <%= text_field_tag "article[title]" %><br>
+
+  <label>Article Description</label><br>
+  <%= text_area_tag "article[description]" %><br>
+
+  <%= submit_tag "Submit Article" %>
+<% end %>
